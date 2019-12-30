@@ -13,8 +13,10 @@ Signed-off-by: Anton Ivanov <anton.ivanov@cambridgegreys.com>
  2 files changed, 13 insertions(+), 1 deletion(-)
  create mode 100644 arch/um/scripts/extra-libs.sh
 
---- /dev/null
-+++ b/arch/um/scripts/extra-libs.sh
+Index: user-mode-linux/arch/um/scripts/extra-libs.sh
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ user-mode-linux/arch/um/scripts/extra-libs.sh	2019-12-30 16:07:03.855845555 +0530
 @@ -0,0 +1,10 @@
 +#!/bin/sh
 +
@@ -26,15 +28,18 @@ Signed-off-by: Anton Ivanov <anton.ivanov@cambridgegreys.com>
 +if [ "${CONFIG_UML_NET_PCAP}" = "y" ] ; then
 +       UML_EXTRA_LIBS="$UML_EXTRA_LIBS -lpcap"
 +fi
---- a/scripts/link-vmlinux.sh
-+++ b/scripts/link-vmlinux.sh
-@@ -83,10 +83,12 @@
+Index: user-mode-linux/scripts/link-vmlinux.sh
+===================================================================
+--- user-mode-linux.orig/scripts/link-vmlinux.sh	2019-12-30 16:07:03.859845658 +0530
++++ user-mode-linux/scripts/link-vmlinux.sh	2019-12-30 16:10:46.949229541 +0530
+@@ -90,11 +90,13 @@
  			-Wl,--end-group				\
- 			${1}"
+ 			${@}"
  
 +                . arch/um/scripts/extra-libs.sh
 +
- 		${CC} ${CFLAGS_vmlinux} -o ${2}			\
+ 		${CC} ${CFLAGS_vmlinux}				\
+ 			-o ${output}				\
  			-Wl,-T,${lds}				\
  			${objects}				\
 -			-lutil -lrt -lpthread
