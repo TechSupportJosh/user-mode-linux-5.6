@@ -1,3 +1,10 @@
+user-mode-linux (5.4-1um-1) unstable; urgency=medium
+
+  * [da6bf6c] Update to Linux 5.4
+  * [5049017] Refresh patch debian/patches/08-fix-pcap-linkage.patch
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Mon, 30 Dec 2019 16:19:19 +0530
+
 user-mode-linux (5.3-1um-1) unstable; urgency=medium
 
   * [10ebf91] Update to track Linux 5.3
