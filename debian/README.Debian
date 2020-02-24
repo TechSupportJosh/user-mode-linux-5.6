@@ -59,7 +59,7 @@ to do this the easy way.  See sources.list(5).
 
    Or, apply a UML patch by hand and touch patch-stamp
 
-5. $ cd kernel-source-KVERSION
+5. $ cd linux-source-KVERSION
 
 6. $ make defconfig ARCH=um && make [menu,x]config ARCH=um # etc.
 
