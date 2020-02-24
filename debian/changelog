@@ -1,3 +1,11 @@
+user-mode-linux (4.19-1um-1+deb10u1) buster; urgency=medium
+
+  * Non-maintainer upload.
+  * [00f54af] Fix FTBFS in buster with linux-source-4.19 4.19.98-1
+    (Closes: #951329)
+
+ -- Santiago Ruano Rincón <santiago@debian.org>  Fri, 14 Feb 2020 16:11:11 +0100
+
 user-mode-linux (4.19-1um-1) unstable; urgency=medium
 
   * [a505b8d] Update to Linux 4.19 (Closes: #916958)
