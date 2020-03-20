@@ -1,3 +1,19 @@
+user-mode-linux (5.5um1) unstable; urgency=medium
+
+  [ Santiago Ruano Rincón ]
+  * [906e41a] README.Debian: update linux directory path
+
+  [ Ritesh Raj Sarraf ]
+  * [0cbab46] Document CAP_NET_ADMIN usability
+  * [674be91] Add packaging format, 3.0 native
+  * [2e09ba1] Bump to Linux version 5.5
+  * [cee84f0] Use parallel build options.
+    Thanks to Sjoerd Simons
+  * [0610187] config.amd64: Set CONFIG_HW_RANDOM=y.
+    Thanks to Sjoerd Simons
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Fri, 20 Mar 2020 20:38:53 +0530
+
 user-mode-linux (5.4-1um-2) unstable; urgency=medium
 
   * [3f7e38a] Update gbp.conf about tag format
