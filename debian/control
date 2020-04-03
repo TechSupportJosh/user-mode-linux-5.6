@@ -2,7 +2,7 @@ Source: user-mode-linux
 Section: kernel
 Priority: extra
 Maintainer: User Mode Linux Maintainers <team+uml@tracker.debian.org>
-Build-Depends: debhelper (>> 12.0.0), quilt, linux-source-5.5, docbook-to-man, xz-utils, m4, kmod, libvdeplug2-dev, libpcap-dev, bc, dpkg (>= 1.16.2), libssl-dev, bison, flex, gcc-multilib
+Build-Depends: debhelper (>> 12.0.0), quilt, linux-source-5.6, docbook-to-man, xz-utils, m4, kmod, libvdeplug2-dev, libpcap-dev, bc, dpkg (>= 1.16.2), libssl-dev, bison, flex, gcc-multilib
 Uploaders: Ritesh Raj Sarraf <rrs@debian.org>
 Standards-Version: 4.4.1
 Rules-Requires-Root: no
@@ -26,3 +26,5 @@ Description: User-mode Linux (kernel)
  .
  This package contains the kernel itself, as an executable program,
  and the associated kernel modules.
+
+ THIS MODULE HAS BEEN MODIFIED BY github.com/TechSupportJosh and shouldn't be used in anything official
